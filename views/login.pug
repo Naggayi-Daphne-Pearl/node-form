@@ -10,14 +10,14 @@ head
 .container
   h1 PARKVILLE PARKING
   .title Log in  Form
-  form(action='#')
+  form(action='/login' method='POST')
     .user-details
       .input-box
         span.details User Name 
-        input(type='text' placeholder='Enter user-name' required='')
+        input(type='text' placeholder='Enter user-name' name='username')
       .input-box
         span.details Password
-        input(type='password' placeholder='password' required='')
+        input(type='password' placeholder='password' name='password')
       .sign
         | Have you forgotten your Password
       .button
