@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const registerSchema = mongoose.Schema({
     username: {
         type: String, 
-        required: true; 
+        required: true, 
     },
     password: {
         type: String, 
@@ -16,4 +16,4 @@ const registerSchema = mongoose.Schema({
 }); 
 
 // exporting information to database
-module.exports = mongoose.model('', registerSchema);
+module.exports = mongoose.model('Login', registerSchema);
