@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #E2D784, #05595B ); 
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+    align-items: center;
+    position: relative;
+}
+.container .title {
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    align-items: center;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #E2D784, #05595B ); 
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+
+}
+
+form .user-details .input-box {
+    margin-bottom: 15PX;
+    width: calc(100%/2 - 20px);
+
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s;
+}
+
+.user-details .input-box input:focus
+.user-details .input-box input:valid {
+    border-color: #05595B;
+}
+
+form .gender-details .gender-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form .gender-details .gender {
+    /*display: flex;
+    width: 80%; */
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+form .button input {
+    height: 100%;
+    width: 300px;
+    outline: none;
+    color: #fff;
+    justify-content: center;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #E2D784, #05595B ); 
+
+}
+
+form .button input:hover {
+    background: #05595B;
+}
+
+/* Making page responsive */
+@media (max-width:630px) {
+    .container {
+        max-width: 100%;
+    }
+    form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .gender {
+        width: 100%;
+    }
+    .container form .user-details {
+        max-height: 300px;
+        overflow: scroll;
+    }
+}
+
+
+
+
+
+
+
+
+
+
